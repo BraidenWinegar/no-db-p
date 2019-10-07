@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import CategoryDisplay from './components/CategoryDisplay'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(){
+    super();
+
+    this.state = {
+   
+    }
+  
+  }
+
+  componentDidMount(){
+    // this.labelName = labelNameFromSource
+  }
+
+
+
+
+
+  grabLabelNameFn = (callback) => {
+    this.setState({
+      labelNameFn: callback
+    })
+    
+
+    console.log(this.state.labelNameFn)
+    console.log(this.state.labelName)
+  }
+  
+  
+  render(){
+    return (
+      <div className="App">
+        <Header labelNameFn={this.state.labelNameFn}/>
+        <CategoryDisplay grabLabelNameFn={this.grabLabelNameFn}/>
+      </div>
+    );
+  }
 }
 
 export default App;

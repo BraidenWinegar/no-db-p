@@ -2,7 +2,12 @@
   "name": "no-db-p",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
+  "proxy": "http://localhost:4050",
   "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-scripts": "3.2.0"
@@ -27,5 +32,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -1,22 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  padding: 5px 10px;
+  background: rgb(155, 207, 124);
+  border-radius: 60px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+header{
+  width: 100%;
+  height: 150px;
+
+  background-color: blue;
+  background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.55));
+  color: white;
+  border-radius: 0 0 100% 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h4 {
+  min-width: 50px;
+  padding: 0 15px;
+  padding-top: 5px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#category-display{
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+img{
+  height: 30px;
+  width: 30px;
+  background:  black
+}
+
+.label-header{
+  height: 50px;
+  margin: 30px;
+  padding: 10px 60px;
+  margin-bottom: 0;
+  background: skyblue;
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(0,0,0,0.2));
+  border: 1px solid black;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labelTitle{
+  min-height: 32px;
+  min-width: 100px;
+  padding: 0 10px;
+  border: 3px solid black;
+  border-radius: 20px
+}
+
+.delete-button{
+  background: red;
+}
+
+.goal-list{
+  margin: 30px;
+  margin-top: 0;
+  
+  border: 1px solid black;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.goal-header{
+  min-width: 300px;
+  
+  display: flex;
+  justify-content: flex-start;
+}
+
+.goal-box{
+  height: 50px;
+  padding: 0px 60px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.checked-box{
+  margin: 0px 7px;
 }
